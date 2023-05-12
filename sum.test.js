@@ -11,3 +11,13 @@ describe("example tests", () => {
         expect(obj).toEqual({})
     })
 })
+
+describe("truthy or falsy", () => {
+    it("null", () => {
+        const n = null
+        expect(n).toBeFalsy()
+        expect(n).not.toBeTruthy()
+        expect(n).toBeNull()
+        expect(n).not.toBeUndefined()
+    })
+})
